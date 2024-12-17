@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<h1>Нейронная сеть для классификации животных</h1>
+<form action="{{ post_url }}" method="POST" enctype="multipart/form-data">
+    <label class="custom-file-upload">
+        <input type="file" class="form_text" name="image" required>
+        Выберите файл
+    </label>
+    <input type="submit" class="form_btn" value="Узнать что за животное">
+</form>
+
+{% if predicted_class %}
+    <h1>Это {{ predicted_class }} с вероятностью {{ percent }}%</h1>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<h1>Детектирование объектов с использованием YOLOv5</h1>
+<form action="{{ post_url }}" method="POST" enctype="multipart/form-data">
+    <label class="custom-file-upload">
+        <input type="file" class="form_text" name="image" required>
+        Выберите файл
+    </label>
+    <input type="submit" class="form_btn" value="Узнать что за животное">
+</form>
+
+{% if image_path %}
+    <h1>Результаты детектирования:</h1>
+    <div class="centre"><img src="{{ image_path }}" alt="Annotated Image"></div>
+
+
+{% endif %}
+
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
+{% endblock %}

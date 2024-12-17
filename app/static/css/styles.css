@@ -1,0 +1,125 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: #173b5b;
+}
+
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+ul.mainmenu {
+    list-style: none;
+    background: #6578a0;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fdc073;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+ul.mainmenu li {
+    float: left;
+    margin: 18px 40px 0 50px;
+}
+
+ul.mainmenu li.last {
+    float: right;
+}
+
+ul.mainmenu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.mainmenu li a:hover {
+    color: #4c92ac;
+}
+
+div.content {
+    margin: 10px;
+}
+
+form {
+    margin: 0 auto; /* центрирование формы */
+    max-width: 450px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form_text {
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    border-radius: 36px;
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 55px;
+}
+
+.form_btn {
+    border: 0px;
+    border-radius: 31px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    background: #2abc3880;
+}
+
+.form_btn:hover {
+    background-color: #2bbe1ded; /* Изменение цвета кнопки при наведении */
+}
+
+.custom-file-upload {
+   display: inline-block;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #7697be;
+    color: #000000;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-left: 110px;
+    margin-bottom: 34px;
+}
+
+.custom-file-upload:hover {
+    background-color: #7697be75;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+img{
+    max-width: 570px;
+    max-height: 689px;
+    border: 10px solid;
+    border-color: antiquewhite;
+}
+
+.centre{
+    text-align: center;
+}
+
